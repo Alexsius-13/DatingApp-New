@@ -108,7 +108,6 @@ namespace API.Controllers
     }
 
     [HttpDelete("delete-photo/{photoId}")]
-
     public async Task<ActionResult> DeletePhoto(int photoId)
     {
         var user = await _userRepository.GetUserByUsernameAsync(User.GetUsername());

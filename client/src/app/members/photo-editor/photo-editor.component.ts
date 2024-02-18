@@ -56,7 +56,7 @@ export class PhotoEditorComponent implements OnInit {
     this.memberService.deletePhoto(photoId).subscribe({
       next: _ => {
         if(this.member){
-          this.member.photos.filter(x => x.id !== photoId);
+          this.member.photos = this.member.photos.filter(x => x.id !== photoId);
         }
       }
     })
