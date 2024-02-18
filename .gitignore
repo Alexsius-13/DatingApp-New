@@ -482,3 +482,8 @@ $RECYCLE.BIN/
 
 # Vim temporary swap files
 *.swp
+
+# Add appsettings.json to the .gitignore
+appsettings.json
+
+# End of .gitignore content
